@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Roman.Ambinder.Infra.Common.DataTypes</AssemblyName>
+    <RootNamespace>Roman.Ambinder.Infra.Common.DataTypes</RootNamespace>
+    <Authors>Roman Ambinder</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl></PackageProjectUrl>
+    <Copyright>Roman Ambinder</Copyright>
+    <RepositoryUrl>https://github.com/roman-ambinder/Infrastructure</RepositoryUrl>
+    <PackageTags>Infra, DataTypes, Wrappers</PackageTags>
+    <Description>Lighweight aggregates to express the operation result.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+</Project>

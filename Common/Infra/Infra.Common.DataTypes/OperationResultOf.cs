@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Infra.Common.DataTypes
+namespace Roman.Ambinder.Infra.Common.DataTypes
 {
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Performance",
         "U2U1004:Public value types should implement equality",
@@ -8,7 +8,7 @@ namespace Infra.Common.DataTypes
     public readonly struct OperationResultOf<TValue>
     {
         public OperationResultOf(Exception ex)
-            : this(success: false, value: default, errorMessage: ex.Message)
+            : this(success: false, value: default, errorMessage: ex?.Message)
         { }
 
         public OperationResultOf(TValue value)
@@ -30,6 +30,12 @@ namespace Infra.Common.DataTypes
 
         public static implicit operator OperationResult(OperationResultOf<TValue> opRes)
             => new OperationResult(opRes.Success, opRes.ErrorMessage);
+
+        public static implicit operator TValue(OperationResultOf<TValue> opRes)
+            => opRes.Value;
+
+        public override string ToString()
+            => $"{nameof(Success)}: {Success},{nameof(Value)}: {Value}, {nameof(ErrorMessage)}: {ErrorMessage}";
 
         public bool Success { get; }
 
