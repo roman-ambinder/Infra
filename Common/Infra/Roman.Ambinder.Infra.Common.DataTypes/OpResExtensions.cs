@@ -1,5 +1,4 @@
-﻿using System;
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 
 namespace Roman.Ambinder.Infra.Common.DataTypes
 {
@@ -13,13 +12,11 @@ namespace Roman.Ambinder.Infra.Common.DataTypes
             => new OperationResultOf<T>(target);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static OperationResultOf<TBase> AsSuccessfullOpRes<TImpl, TBase>(
-            this TImpl target)
-            where TImpl : TBase
-          => new OperationResultOf<TBase>((TBase)target);
+        public static OperationResultOf<T> AsFailedOpResOf<T>(this OperationResult opRes)
+            => new OperationResultOf<T>(success: false, value: default, errorMessage: opRes.ErrorMessage);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static OperationResultOf<T> AsFailedOpRes<T>(this Exception target)
-           => new OperationResultOf<T>(target);
+        public static OperationResultOf<T> AsFailedOpResOf<T>(this string errorMessage)
+            => new OperationResultOf<T>(success: false, value: default, errorMessage: errorMessage);
     }
 }
