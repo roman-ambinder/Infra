@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roman.Ambinder.Infra.Common.DataTypes", "Common\Infra\Infra.Common.DataTypes\Roman.Ambinder.Infra.Common.DataTypes.csproj", "{75F1B32E-E2C5-443D-9F89-3FC67241B076}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{A270D98B-8BCD-47BF-8F80-BEC50ED37D5B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2B2534EA-2F2B-45C2-B632-FE962D4EEFE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roman.Ambinder.Infra.Common.DataTypes.Tests", "Tests\Common\Roman.Ambinder.Infra.Common.DataTypes.Tests\Roman.Ambinder.Infra.Common.DataTypes.Tests.csproj", "{785EB535-54FA-4655-BAD7-ED0C7A9D2E33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roman.Ambinder.Infra.Common.DataTypes.Tests", "Tests\Common\Roman.Ambinder.Infra.Common.DataTypes.Tests\Roman.Ambinder.Infra.Common.DataTypes.Tests.csproj", "{785EB535-54FA-4655-BAD7-ED0C7A9D2E33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roman.Ambinder.Infra.Common.DataTypes", "Common\Infra\Roman.Ambinder.Infra.Common.DataTypes\Roman.Ambinder.Infra.Common.DataTypes.csproj", "{DB4C830D-2150-44AB-AF4B-862287EB633D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,21 +17,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{75F1B32E-E2C5-443D-9F89-3FC67241B076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{75F1B32E-E2C5-443D-9F89-3FC67241B076}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{75F1B32E-E2C5-443D-9F89-3FC67241B076}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{75F1B32E-E2C5-443D-9F89-3FC67241B076}.Release|Any CPU.Build.0 = Release|Any CPU
 		{785EB535-54FA-4655-BAD7-ED0C7A9D2E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{785EB535-54FA-4655-BAD7-ED0C7A9D2E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{785EB535-54FA-4655-BAD7-ED0C7A9D2E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{785EB535-54FA-4655-BAD7-ED0C7A9D2E33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB4C830D-2150-44AB-AF4B-862287EB633D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB4C830D-2150-44AB-AF4B-862287EB633D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB4C830D-2150-44AB-AF4B-862287EB633D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB4C830D-2150-44AB-AF4B-862287EB633D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{75F1B32E-E2C5-443D-9F89-3FC67241B076} = {A270D98B-8BCD-47BF-8F80-BEC50ED37D5B}
 		{785EB535-54FA-4655-BAD7-ED0C7A9D2E33} = {2B2534EA-2F2B-45C2-B632-FE962D4EEFE9}
+		{DB4C830D-2150-44AB-AF4B-862287EB633D} = {A270D98B-8BCD-47BF-8F80-BEC50ED37D5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {49EC4E5F-C0EC-458E-956E-783BDF7607D5}

@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Common\Infra\Infra.Common.DataTypes\Roman.Ambinder.Infra.Common.DataTypes.csproj" />
+    <ProjectReference Include="..\..\..\Common\Infra\Roman.Ambinder.Infra.Common.DataTypes\Roman.Ambinder.Infra.Common.DataTypes.csproj" />
   </ItemGroup>
 
 </Project>

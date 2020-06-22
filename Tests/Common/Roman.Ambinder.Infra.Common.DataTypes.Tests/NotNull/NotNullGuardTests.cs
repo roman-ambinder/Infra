@@ -8,7 +8,7 @@ namespace Roman.Ambinder.Infra.Common.DataTypes.Tests.NotNull
         [TestMethod]
         public void NullValue_UseNoReturnValue_NullActionExectued()
         {
-            //Arrange 
+            //Arrange
             NotNullGuard<string> target = null;
 
             //Act  + Assert
@@ -19,7 +19,7 @@ namespace Roman.Ambinder.Infra.Common.DataTypes.Tests.NotNull
         [TestMethod]
         public void NotNullValue_UseNoReturnValue_NotNullValueActionExectued()
         {
-            //Arrange 
+            //Arrange
             const string expectedValue = "Some value";
             NotNullGuard<string> target = expectedValue;
 
@@ -34,7 +34,7 @@ namespace Roman.Ambinder.Infra.Common.DataTypes.Tests.NotNull
         [TestMethod]
         public void NullValue_UseWithReturnValue_NullActionExectued()
         {
-            //Arrange 
+            //Arrange
             NotNullGuard<string> target = null;
 
             //Act  + Assert
@@ -48,7 +48,7 @@ namespace Roman.Ambinder.Infra.Common.DataTypes.Tests.NotNull
         [TestMethod]
         public void NotNullValue_UseWithReturnValue_NotNullActionExectued()
         {
-            //Arrange 
+            //Arrange
             const string expectedValue = "Some value";
             NotNullGuard<string> target = expectedValue;
 
