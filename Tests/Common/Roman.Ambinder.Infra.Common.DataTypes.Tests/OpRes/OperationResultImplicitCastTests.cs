@@ -5,7 +5,7 @@ namespace Roman.Ambinder.Infra.Common.DataTypes.Tests
     [TestClass]
     public class OperationResultImplicitCastTests
     {
-        [TestMethod]
+        [TestMethod] 
         public void FailedOpRes_ImplicitCast_ExpectedValues()
         {
             //Arrange
