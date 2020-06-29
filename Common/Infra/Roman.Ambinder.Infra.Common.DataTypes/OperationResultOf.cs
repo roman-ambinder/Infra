@@ -7,7 +7,7 @@ namespace Roman.Ambinder.Infra.Common.DataTypes
         Justification = "<Pending>")]
     public readonly struct OperationResultOf<TValue>
     {
-        public OperationResultOf(Exception ex)
+        public OperationResultOf(in Exception ex)
             : this(success: false, value: default, errorMessage: ex?.Message)
         { }
 
@@ -25,13 +25,13 @@ namespace Roman.Ambinder.Infra.Common.DataTypes
             ErrorMessage = errorMessage;
         }
 
-        public static implicit operator bool(OperationResultOf<TValue> opRes)
+        public static implicit operator bool(in OperationResultOf<TValue> opRes)
             => opRes.Success;
 
-        public static implicit operator OperationResult(OperationResultOf<TValue> opRes)
+        public static implicit operator OperationResult(in OperationResultOf<TValue> opRes)
             => new OperationResult(opRes.Success, opRes.ErrorMessage);
 
-        public static implicit operator TValue(OperationResultOf<TValue> opRes)
+        public static implicit operator TValue(in OperationResultOf<TValue> opRes)
             => opRes.Value;
 
         public override string ToString()

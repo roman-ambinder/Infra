@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Threading;
 
 namespace Roman.Ambinder.Infra.Common.DataTypes.Tests
 {
@@ -68,7 +69,7 @@ namespace Roman.Ambinder.Infra.Common.DataTypes.Tests
 
         [TestMethod]
         public void ErrorMessageAsFailedOpResOfValueType_MatchingOperationResReturned()
-        {
+        {            
             //Arrange 
             const string errorMessage = "Some error message";
 

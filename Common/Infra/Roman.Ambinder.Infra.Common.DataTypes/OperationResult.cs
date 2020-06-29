@@ -14,13 +14,13 @@ namespace Roman.Ambinder.Infra.Common.DataTypes
             : this(success: false, errorMessage: ex.Message)
         { }
 
-        public OperationResult(bool success, string errorMessage = null)
+        public OperationResult(in bool success, string errorMessage = null)
         {
             Success = success;
             ErrorMessage = errorMessage;
         }
 
-        public static implicit operator bool(OperationResult opRes)
+        public static implicit operator bool(in OperationResult opRes)
             => opRes.Success;
 
         public override string ToString()

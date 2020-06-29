@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roman.Ambinder.Infra.Common
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roman.Ambinder.Infra.Common.DataTypes", "Common\Infra\Roman.Ambinder.Infra.Common.DataTypes\Roman.Ambinder.Infra.Common.DataTypes.csproj", "{DB4C830D-2150-44AB-AF4B-862287EB633D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roman.Ambinder.Infra.Common.ExtensionsAndHelpers", "Common\Infra\Roman.Ambinder.Infra.Common.ExtensionsAndHelpers\Roman.Ambinder.Infra.Common.ExtensionsAndHelpers.csproj", "{079CA6B5-14AA-4B88-B87A-69FDDBB460F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{DB4C830D-2150-44AB-AF4B-862287EB633D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB4C830D-2150-44AB-AF4B-862287EB633D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB4C830D-2150-44AB-AF4B-862287EB633D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{079CA6B5-14AA-4B88-B87A-69FDDBB460F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{079CA6B5-14AA-4B88-B87A-69FDDBB460F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{079CA6B5-14AA-4B88-B87A-69FDDBB460F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{079CA6B5-14AA-4B88-B87A-69FDDBB460F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{785EB535-54FA-4655-BAD7-ED0C7A9D2E33} = {2B2534EA-2F2B-45C2-B632-FE962D4EEFE9}
 		{DB4C830D-2150-44AB-AF4B-862287EB633D} = {A270D98B-8BCD-47BF-8F80-BEC50ED37D5B}
+		{079CA6B5-14AA-4B88-B87A-69FDDBB460F9} = {A270D98B-8BCD-47BF-8F80-BEC50ED37D5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {49EC4E5F-C0EC-458E-956E-783BDF7607D5}

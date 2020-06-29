@@ -12,7 +12,7 @@ namespace Roman.Ambinder.Infra.Common.DataTypes
             => new OperationResultOf<T>(target);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static OperationResultOf<T> AsFailedOpResOf<T>(this OperationResult opRes)
+        public static OperationResultOf<T> AsFailedOpResOf<T>(this in OperationResult opRes)
             => new OperationResultOf<T>(success: false, value: default, errorMessage: opRes.ErrorMessage);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

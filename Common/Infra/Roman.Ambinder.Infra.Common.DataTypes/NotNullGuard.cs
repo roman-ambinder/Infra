@@ -9,7 +9,7 @@ namespace Roman.Ambinder.Infra.Common.DataTypes
     {
         private readonly T _value;
 
-        public NotNullGuard(T value)
+        public NotNullGuard(in T value)
         {
             _value = value;
         }
